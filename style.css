@@ -1,0 +1,150 @@
+/*!
+Theme Name: CMS Bafedh
+Theme URI: https://yaakovfar.dev
+Author: Yaakov, Ruben, Baptiste
+Author URI: https://yaakovfar.dev
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cms-bafedh
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+:root {
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  font: var(--text-font);
+
+  --black: hsl(17, 86%, 9%);
+  --gray: hsl(17, 17%, 81%);
+  --white: hsl(0, 0%, 98%);
+  --accent: hsl(17, 63%, 52%);
+
+  --title-font: bold 1.5rem font_bold, serif;
+  --text-font: 1rem font_regular, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+/* GENERAL */
+
+h1 {
+  text-align: center;
+}
+
+.logo-link svg {
+  width: 100%;
+  height: 100%;
+}
+
+.primary-button {
+  border: var(--accent) 3px solid;
+  border-radius: 100rem;
+  padding: .5rem 1.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+  display: inline-block;
+}
+
+.primary-button:hover, .primary-button:focus {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+/* HEADER ET FOOTER*/
+
+.site-header, .site-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.site-header ul, .site-footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.site-header ul a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.site-footer ul a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.site-header ul a:hover, .site-header ul a:focus {
+  color: var(--accent);
+}
+
+.site-footer ul a:hover, .site-footer ul a:focus {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background-color: var(--black);
+  gap: 5rem;
+}
+
+.site-footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* HOMEPAGE */
+
+.contact-section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 1rem;
+  background-color: var(--gray);
+}
+
+.contact-section > img {
+  background-color: #ddd;
+}
+
+.contact-section > div {
+  max-width: 40%;
+}
