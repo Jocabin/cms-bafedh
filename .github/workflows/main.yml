@@ -18,4 +18,4 @@ jobs:
           username: ftp_ecv_yferechtehfar
           password: ${{ secrets.password }}
           protocol: ftps
-          server-dir: ./www/wp-content/themes/cms-bafedh
+          server-dir: ./www/wp-content/themes/cms-bafedh/
