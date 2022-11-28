@@ -5,26 +5,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Build ⛏
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@main
-      - name: Archive production artifact
-        uses: actions/upload-artifact@main
-        with:
-          name: dist
-          path: dist
   deploy:
     name: Deploy 🚀
-    needs: build
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Sync files to hosting
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0 --insecure
         with: 
           server: yferechtehfar.ecv-monsite.fr
           username: ftp_ecv_yferechtehfar
