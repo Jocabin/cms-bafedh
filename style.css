@@ -117,7 +117,7 @@ h1 {
 }
 
 .site-footer {
-  background-color: var(--black);
+  background-color: red;
   gap: 5rem;
 }
 
