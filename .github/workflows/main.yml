@@ -16,6 +16,6 @@ jobs:
         with: 
           server: yferechtehfar.ecv-monsite.fr
           username: ftp_ecv_yferechtehfar
-          password: S5jGywDuBj
+          password: ${{ secrets.password }}
           protocol: ftps
           server-dir: ./www/wp-content/themes/cms-bafedh
