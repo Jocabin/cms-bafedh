@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="49605cca-62cd-4ee9-aa52-f52fba7f24fd" name="theme" url="http://yferechtehfar.ecv-monsite.fr">
+        <fileTransfer rootFolder="/www/wp-content/themes/cms-bafedh" accessType="FTPS" host="yferechtehfar.ecv-monsite.fr" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
