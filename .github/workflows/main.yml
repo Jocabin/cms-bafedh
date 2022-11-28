@@ -9,10 +9,8 @@ jobs:
     name: Deploy 🚀
     runs-on: ubuntu-latest
     steps: 
-      - name: Checkout repository
-        uses: actions/checkout@main
       - name: Sync files to hosting
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with: 
           server: yferechtehfar.ecv-monsite.fr
           username: ftp_ecv_yferechtehfar
