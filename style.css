@@ -63,7 +63,7 @@ h1 {
 .primary-button {
   border: var(--accent) 3px solid;
   border-radius: 100rem;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
@@ -71,14 +71,16 @@ h1 {
   display: inline-block;
 }
 
-.primary-button:hover, .primary-button:focus {
+.primary-button:hover,
+.primary-button:focus {
   background-color: var(--accent);
   color: var(--white);
 }
 
 /* HEADER ET FOOTER*/
 
-.site-header, .site-footer {
+.site-header,
+.site-footer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -88,7 +90,8 @@ h1 {
   padding: 2rem;
 }
 
-.site-header ul, .site-footer ul {
+.site-header ul,
+.site-footer ul {
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
@@ -108,16 +111,18 @@ h1 {
   color: var(--white);
 }
 
-.site-header ul a:hover, .site-header ul a:focus {
+.site-header ul a:hover,
+.site-header ul a:focus {
   color: var(--accent);
 }
 
-.site-footer ul a:hover, .site-footer ul a:focus {
+.site-footer ul a:hover,
+.site-footer ul a:focus {
   text-decoration: underline;
 }
 
 .site-footer {
-  background-color: red;
+  background-color: var(--black);
   gap: 5rem;
 }
 
