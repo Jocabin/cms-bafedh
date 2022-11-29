@@ -1,2 +1,6 @@
 /.git
-/.idea
+/.idea/*
+.idea
+.git
+.iws
+.xml
