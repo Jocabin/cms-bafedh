@@ -10,15 +10,18 @@ get_header();
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
-            </div>
-
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
                 <img src="" alt="">
             </div>
 
             <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+            <div>
+                <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
@@ -75,7 +78,7 @@ get_header();
                 inventore pariatur, porro quas quidem recusandae reiciendis rem repellendus tempore vero vitae
                 voluptatum. Accusamus, nostrum!
             </p>
-            <a href="mailto:bastiendb@gmail.com" class="primary-button">Me contacter</a>
+            <a href="mailto:bastiendb@gmail.com" class="primary-button dark-button">Me contacter</a>
 
             <p>Réponse entre 48 h 72h</p>
         </div>

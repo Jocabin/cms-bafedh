@@ -67,10 +67,6 @@ h1 {
   font-weight: bold;
 }
 
-main[id="primary"] {
-  padding: 0 2rem;
-}
-
 .logo-link svg {
   width: 100%;
   height: 100%;
@@ -86,9 +82,19 @@ main[id="primary"] {
   display: inline-block;
 }
 
+.dark-button {
+  color: var(--black);
+  border-color: var(--black);
+}
+
 .primary-button:hover,
 .primary-button:focus {
   background-color: var(--accent);
+  color: var(--white);
+}
+
+.dark-button:hover, .dark-button:focus {
+  background-color: var(--black);
   color: var(--white);
 }
 
@@ -165,13 +171,19 @@ main[id="primary"] {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .collections img {
   width: 100%;
-  height: 10rem;
   background-color: var(--gray);
+  aspect-ratio: 1 / 1.5;
+  filter: brightness(80%);
+  transition: all 400ms ease-in-out;
+}
+
+.collections div:hover img, .collections div:focus img {
+  filter: brightness(100%);
 }
 
 .contact-section {
