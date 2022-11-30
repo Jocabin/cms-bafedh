@@ -7,24 +7,24 @@ get_header();
 
         <section class="collections">
             <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/2.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/3.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/4.jpg" alt="">
             </div>
 
             <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/2.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/4.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/3.jpg" alt="">
             </div>
 
             <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.jpg" alt="">
             </div>
         </section>
 
@@ -70,7 +70,8 @@ get_header();
     </main>
 
     <section class="contact-section">
-        <img width="673" height="297" src="./contactSection.jpg" alt="Info de contact">
+        <img width="673" height="297" src="<?php echo get_template_directory_uri(); ?>/images/contactSection.jpg"
+             alt="Info de contact">
         <div>
             <h2>Me contacter</h2>
             <p>
