@@ -64,7 +64,6 @@
                 </g>
             </svg>
         </a>
-        <a class="primary-button" href="#">Remonter en haut</a>
     </div>
 
     <nav class="footer-navigation">
