@@ -29,8 +29,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   --white: hsl(0, 0%, 98%);
   --accent: hsl(17, 63%, 52%);
 
-  --title-font: bold 1.5rem font_bold, serif;
-  --text-font: 1rem font_regular, sans-serif;
+  --title-font: 700 2.5rem dazzle-unicase, sans-serif;
+  --text-font: 1rem neue-haas-grotesk-display, sans-serif;
 }
 
 * {
@@ -53,6 +53,12 @@ body {
 
 h1 {
   text-align: center;
+  text-transform: uppercase;
+  font: var(--title-font);
+}
+
+main[id="primary"] {
+  padding: 0 2rem;
 }
 
 .logo-link svg {
