@@ -196,6 +196,8 @@ h2, h3, h4 {
 }
 
 .collections > section > div {
+  transition: all 400ms ease-in-out;
+  padding: 2rem 3rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -213,6 +215,7 @@ h2, h3, h4 {
   color: var(--white);
   font-size: clamp(2rem, 10vw, 4rem);
   margin: 0;
+  font-weight: lighter;
 }
 
 .collections img {
@@ -221,10 +224,6 @@ h2, h3, h4 {
   aspect-ratio: 1 / 1.5;
   filter: brightness(50%);
   transition: all 400ms ease-in-out;
-}
-
-.collections section:hover img, .collections section:focus img {
-  filter: brightness(100%);
 }
 
 .contact-section {
