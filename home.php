@@ -7,7 +7,11 @@ get_header();
 
         <div class="collections">
             <section>
-                <h2>Collection</h2>
+                <div>
+                    <h2>Collection</h2>
+                    <a href="#" class="primary-button light-button">Voir la collection</a>
+                </div>
+
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/1.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/2.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/3.jpg" alt="">
@@ -15,7 +19,11 @@ get_header();
             </section>
 
             <section>
-                <h2>Collection</h2>
+                <div>
+                    <h2>Collection</h2>
+                    <a href="#" class="primary-button light-button">Voir la collection</a>
+                </div>
+
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/2.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/4.jpg" alt="">
@@ -23,7 +31,11 @@ get_header();
             </section>
 
             <section>
-                <h2>Collection</h2>
+                <div>
+                    <h2>Collection</h2>
+                    <a href="#" class="primary-button light-button">Voir la collection</a>
+                </div>
+
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.jpg" alt="">

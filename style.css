@@ -93,6 +93,11 @@ h2, h3, h4 {
   border-color: var(--black);
 }
 
+.light-button {
+  color: var(--white);
+  border-color: var(--white);
+}
+
 .primary-button:hover,
 .primary-button:focus {
   background-color: var(--accent);
@@ -102,6 +107,11 @@ h2, h3, h4 {
 .dark-button:hover, .dark-button:focus {
   background-color: var(--black);
   color: var(--white);
+}
+
+.light-button:hover, .light-button:focus {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 /* HEADER ET FOOTER*/
@@ -181,12 +191,25 @@ h2, h3, h4 {
   position: relative;
 }
 
-.collections > section > h2 {
+.collections .primary-button {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.collections > section > div {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.collections > section > div > h2 {
   color: var(--white);
   font-size: clamp(2rem, 10vw, 4rem);
   margin: 0;
