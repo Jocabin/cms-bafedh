@@ -24,7 +24,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   -webkit-text-size-adjust: 100%;
   font: var(--text-font);
 
-  --black: hsl(17, 86%, 9%);
+  --black: hsl(17, 88%, 5%);
   --gray: hsl(17, 17%, 81%);
   --white: hsl(0, 0%, 98%);
   --accent: hsl(17, 63%, 52%);
