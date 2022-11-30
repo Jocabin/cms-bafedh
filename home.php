@@ -5,28 +5,31 @@ get_header();
         <h1>titre</h1>
         <p class="baseline">baseline</p>
 
-        <section class="collections">
-            <div>
+        <div class="collections">
+            <section>
+                <h2>Collection</h2>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/1.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/2.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/3.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/4.jpg" alt="">
-            </div>
+            </section>
 
-            <div>
+            <section>
+                <h2>Collection</h2>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/2.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/4.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/3.jpg" alt="">
-            </div>
+            </section>
 
-            <div>
+            <section>
+                <h2>Collection</h2>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.jpg" alt="">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.jpg" alt="">
-            </div>
-        </section>
+            </section>
+        </div>
 
         <ul class="reassurance">
             <li>
@@ -73,15 +76,20 @@ get_header();
         <img width="673" height="297" src="<?php echo get_template_directory_uri(); ?>/images/contactSection.jpg"
              alt="Info de contact">
         <div>
-            <h2>Me contacter</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque dolore dolorem eos est eveniet
-                inventore pariatur, porro quas quidem recusandae reiciendis rem repellendus tempore vero vitae
-                voluptatum. Accusamus, nostrum!
-            </p>
-            <a href="mailto:bastiendb@gmail.com" class="primary-button dark-button">Me contacter</a>
+            <div>
+                <h2>Me contacter</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque dolore dolorem eos est eveniet
+                    inventore pariatur, porro quas quidem recusandae reiciendis rem repellendus tempore vero vitae
+                    voluptatum. Accusamus, nostrum!
+                </p>
+            </div>
 
-            <p>Réponse entre 48 h 72h</p>
+            <div>
+                <a href="mailto:bastiendb@gmail.com" class="primary-button dark-button">Me contacter</a>
+
+                <p>Réponse entre 48 h 72h</p>
+            </div>
         </div>
     </section>
 <?php

@@ -167,11 +167,23 @@ h1 {
   gap: 2rem;
 }
 
-.collections > div {
+.collections > section {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  position: relative;
+}
+
+.collections > section > h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: var(--white);
+  font-size: clamp(2rem, 10vw, 4rem);
+  margin: 0;
 }
 
 .collections img {
@@ -182,7 +194,7 @@ h1 {
   transition: all 400ms ease-in-out;
 }
 
-.collections div:hover img, .collections div:focus img {
+.collections section:hover img, .collections section:focus img {
   filter: brightness(100%);
 }
 
@@ -198,7 +210,7 @@ h1 {
 
 .contact-section > img {
   background-color: #ddd;
-  width: 40%;
+  width: 673px;
 }
 
 .contact-section > div {
@@ -232,4 +244,41 @@ h1 {
 
 .reassurance svg {
   height: 4.5rem;
+}
+
+@media screen and (max-width: 673px) {
+  .contact-section > img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-section {
+    width: 100% !important;
+  }
+
+  .contact-section > div {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1174px) {
+  .contact-section {
+    width: min-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-section > div {
+    gap: 2rem;
+    display: flex;
+    max-width: 100% !important;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-section > div > div {
+  }
 }
