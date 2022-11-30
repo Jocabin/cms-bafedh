@@ -2,7 +2,7 @@
 get_header();
 ?>
     <main id="primary" class="site-main">
-        <h1>titre</h1>
+        <h1><?php the_title(); ?></h1>
         <p class="baseline">baseline</p>
 
         <div class="collections">
