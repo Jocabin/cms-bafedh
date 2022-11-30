@@ -3,7 +3,27 @@ get_header();
 ?>
     <main id="primary" class="site-main">
         <h1>titre</h1>
-        <p>baseline</p>
+        <p class="baseline">baseline</p>
+
+        <section class="collections">
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
 
         <ul class="reassurance">
             <li>
