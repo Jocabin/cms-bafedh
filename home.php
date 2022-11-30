@@ -2,8 +2,8 @@
 get_header();
 ?>
     <main id="primary" class="site-main">
-        <h1><?php the_title(); ?></h1>
-        <p class="baseline">baseline</p>
+        <h1>Accueil</h1>
+        <p class="baseline">Bastien de bafedh - Photographe Freelance professionnel</p>
 
         <div class="collections">
             <section>
