@@ -414,6 +414,7 @@ li.product-tile a, li.product-tile a:visited {
   flex-direction: column;
   cursor: pointer;
   text-decoration: none;
+  color: var(--black);
 }
 
 li.product-tile h2 {
