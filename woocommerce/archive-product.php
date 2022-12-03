@@ -7,10 +7,10 @@ get_header();
 
 <?php do_action('woocommerce_before_main_content'); ?>
 
-<nav class="products-page-tab-manager">
-    <a class="products-page-tab" href="/boutique/photos">Photos</a>
-    <a class="products-page-tab" href="/boutique/accessoires">Accessoires</a>
-</nav>
+    <nav class="products-page-tab-manager">
+        <a class="products-page-tab" href="/boutique/photos">Photos</a>
+        <a class="products-page-tab" href="/boutique/accessoires">Accessoires</a>
+    </nav>
 
 <?php
 if (woocommerce_product_loop()) {
@@ -20,14 +20,15 @@ if (woocommerce_product_loop()) {
         while (have_posts()) {
             the_post();
             do_action('woocommerce_shop_loop');
-
             ?>
             <li class="product-tile" tabindex="0">
+                <?php do_action('woocommerce_before_shop_loop_item'); ?>
                 <div>
                     <?php do_action('woocommerce_before_shop_loop_item_title'); ?>
                 </div>
                 <?php do_action('woocommerce_shop_loop_item_title'); ?>
                 <p>À partir de <?php do_action('woocommerce_after_shop_loop_item_title'); ?></p>
+                <?php do_action('woocommerce_after_shop_loop_item'); ?>
             </li>
             <?php
         }
@@ -37,10 +38,10 @@ if (woocommerce_product_loop()) {
 
     do_action('woocommerce_after_shop_loop');
 } else { ?>
-   <div class="no-products">
-       <p>Aucuns produits disponibles</p>
-       <a href="/" class="primary-button">Retourner à l'accueil</a>
-   </div>
+    <div class="no-products">
+        <p>Aucuns produits disponibles</p>
+        <a href="/" class="primary-button">Retourner à l'accueil</a>
+    </div>
 <?php } ?>
 
     <ul class="reassurance">

@@ -398,6 +398,14 @@ nav + ul.products {
   padding: 2rem 0;
 }
 li.product-tile {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.product-tile a {
   display: flex;
   width: 100%;
   height: 100%;
@@ -405,6 +413,7 @@ li.product-tile {
   padding: 0;
   flex-direction: column;
   cursor: pointer;
+  text-decoration: none;
 }
 
 li.product-tile h2 {
