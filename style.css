@@ -372,3 +372,80 @@ h2, h3, h4 {
   text-align: left;
   font-size: 2rem;
 }
+
+/* SHOP PAGE */
+
+.products-page-tab-manager {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.products-page-tab {
+  padding: 1rem;
+}
+
+nav + ul.products {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, 310px);
+  grid-template-rows: repeat(auto-fill, 455px);
+  padding: 2rem 0;
+}
+li.product-tile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+li.product-tile h2 {
+  font-size: 1.25rem;
+}
+
+li.product-tile div {
+  display: block;
+  background: #aaaaaa;
+  flex: 1;
+  aspect-ratio: 1 / 1.5;
+  width: 100%;
+  overflow: hidden;
+}
+
+li.product-tile div img {
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms ease-in-out;
+}
+
+li.product-tile p {
+  margin: 0;
+}
+
+li.product-tile:hover div img {
+  transform: rotate(-4deg) scale(1.1);
+}
+
+.no-products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.no-products p {
+  font: var(--title-font);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
