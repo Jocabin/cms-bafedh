@@ -8,8 +8,8 @@ get_header();
 <?php do_action('woocommerce_before_main_content'); ?>
 
     <nav class="products-page-tab-manager">
-        <a class="products-page-tab" href="/boutique/photos">Photos</a>
-        <a class="products-page-tab" href="/boutique/accessoires">Accessoires</a>
+        <a class="products-page-tab" href="/boutique-type/photos">Photos</a>
+        <a class="products-page-tab" href="/boutique-type/accessoires">Accessoires</a>
     </nav>
 
 <?php
