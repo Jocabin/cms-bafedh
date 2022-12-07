@@ -8,7 +8,7 @@ get_header();
         <div class="collections">
             <section>
                 <div>
-                    <h2>Collection</h2>
+                    <h2>Merveilles de Séville</h2>
                     <a href="/merveilles-de-seville-collections" class="primary-button light-button">Voir la collection</a>
                 </div>
 
@@ -22,8 +22,8 @@ get_header();
 
             <section>
                 <div>
-                    <h2>Collection</h2>
-                    <a href="#" class="primary-button light-button">Voir la collection</a>
+                    <h2>Un voyage Andalou</h2>
+                    <a href="/un-voyage-andalou" class="primary-button light-button">Voir la collection</a>
                 </div>
                 <div class="img-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.jpg" alt="">
@@ -35,8 +35,8 @@ get_header();
 
             <section>
                 <div>
-                    <h2>Collection</h2>
-                    <a href="#" class="primary-button light-button">Voir la collection</a>
+                    <h2>Les orfèvres du sud</h2>
+                    <a href="/orfevre-du-sud" class="primary-button light-button">Voir la collection</a>
                 </div>
 
                 <div class="img-wrapper">
