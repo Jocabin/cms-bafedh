@@ -9,7 +9,7 @@ get_header();
             <section>
                 <div>
                     <h2>Collection</h2>
-                    <a href="/seville" class="primary-button light-button">Voir la collection</a>
+                    <a href="/merveilles-de-seville-collections" class="primary-button light-button">Voir la collection</a>
                 </div>
 
                 <div class="img-wrapper">
