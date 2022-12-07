@@ -19,21 +19,21 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-$short_description = apply_filters('woocommerce_short_description', $post->post_excerpt);
-
 get_header();
 //wc_get_template_part('content', 'single-product');
 ?>
     <main class="single-product">
-        <section class="product-section">
+        <?php do_action('woocommerce_before_add_to_cart_form'); ?>
+        <form class="product-section"
+              action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
+              method="post" enctype='multipart/form-data'>
             <div class="image-section"></div>
 
             <div class="product-details">
                 <header>
-                    <h2>collec</h2>
+                    <h2 class="tags"><?php echo $product->get_tags(); ?></h2>
                     <?php the_title('<h1 class="product_title entry-title">', '</h1>'); ?>
-                    <p><?php echo $product->get_price_html(); ?></p>
-                    <p>Taxes incluses</p>
+                    <p><?php echo $product->get_price_html(); ?><br>Taxes incluses</p>
                     <p>Plus que <?php echo $product->get_stock_quantity(); ?> en stock</p>
                 </header>
 
@@ -45,15 +45,24 @@ get_header();
                     <h3>Choisissez votre finition d'impression</h3>
                 </div>
 
-                <p><?php echo $short_description; ?></p>
+                <?php echo apply_filters('woocommerce_short_description', $post->post_content); ?>
 
-                <div class="cta"></div>
+                <div class="cta">
+                    <?php do_action('woocommerce_before_add_to_cart_button'); ?>
+
+                    <button onclick="alert('produit ajouté')" type="submit" name="add-to-cart"
+                            value="<?php echo esc_attr($product->get_id()); ?>"
+                            class="primary-button"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+
+                    <?php do_action('woocommerce_after_add_to_cart_button'); ?>
+                </div>
 
                 <footer>
                     <!--                    Infos format etc (voir figma screen en bas) (details html tag)-->
                 </footer>
             </div>
-        </section>
+        </form>
+        <?php do_action('woocommerce_after_add_to_cart_form'); ?>
 
         <ul class="reassurance">
             <li>
