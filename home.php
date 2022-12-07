@@ -36,7 +36,7 @@ get_header();
             <section>
                 <div>
                     <h2>Les orfèvres du sud</h2>
-                    <a href="/orfevre-du-sud" class="primary-button light-button">Voir la collection</a>
+                    <a href="/orfevres-du-sud" class="primary-button light-button">Voir la collection</a>
                 </div>
 
                 <div class="img-wrapper">
