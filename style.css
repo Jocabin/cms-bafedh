@@ -242,7 +242,7 @@ p {
 }
 
 .collections section:hover .img-wrapper, .collections section:focus .img-wrapper {
-    transform: scale(1.1);
+    transform: scale(1.04);
     filter: blur(5px);
 }
 
