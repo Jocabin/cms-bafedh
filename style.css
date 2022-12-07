@@ -213,7 +213,6 @@ p {
 }
 
 .collections > section > div:first-of-type {
-    padding: 2rem 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
