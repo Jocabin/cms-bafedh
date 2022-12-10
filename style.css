@@ -589,3 +589,61 @@ li.product-tile:hover div img {
     font-weight: 600;
     font-size: 1.5rem;
 }
+
+.cart-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 3rem;
+    width: 90%;
+    margin: auto;
+}
+
+.cart-collaterals {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.total-cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.total-cart > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.total-cart > div:first-of-type > * {
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.moyen-paiement {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.moyen-paiement ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.moyen-paiement ul li {
+    list-style-type: none;
+}
