@@ -621,8 +621,10 @@ li.product-tile:hover div img {
     gap: 2rem;
 }
 
-.total-cart > div:first-of-type > * {
+.total-cart > div:first-of-type > *, .moyen-paiement h2 {
+    font: var(--text-font);
     font-size: 1.5rem;
+    font-weight: bold;
     text-transform: none;
 }
 
