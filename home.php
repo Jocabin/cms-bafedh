@@ -26,10 +26,10 @@ get_header();
                     <a href="/un-voyage-andalou" class="primary-button light-button">Voir la collection</a>
                 </div>
                 <div class="img-wrapper">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.jpg" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/2.jpg" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/4.jpg" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/3.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.webp" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/2.webp" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/4.webp" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/3.webp" alt="">
                 </div>
             </section>
 
@@ -40,10 +40,10 @@ get_header();
                 </div>
 
                 <div class="img-wrapper">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.jpg" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.jpg" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.jpg" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.webp" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.webp" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.webp" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.webp" alt="">
                 </div>
             </section>
         </div>
