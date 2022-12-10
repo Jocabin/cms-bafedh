@@ -15,8 +15,8 @@ get_header();
                 <div class="img-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/1.webp" alt="">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/2.webp" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/3.webp" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/4.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/7.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/8.webp" alt="">
                 </div>
             </section>
 
