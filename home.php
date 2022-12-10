@@ -13,10 +13,10 @@ get_header();
                 </div>
 
                 <div class="img-wrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/1.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/2.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/3.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/4.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/1.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/2.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/3.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll1/4.webp" alt="">
                 </div>
             </section>
 
@@ -40,10 +40,10 @@ get_header();
                 </div>
 
                 <div class="img-wrapper">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.webp" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.webp" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.webp" alt="">
-                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.webp" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.jpg" alt="">
                 </div>
             </section>
         </div>
