@@ -225,6 +225,7 @@ p {
 .collections > section {
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 
 .collections .img-wrapper {
