@@ -26,10 +26,10 @@ get_header();
                     <a href="/un-voyage-andalou" class="primary-button light-button">Voir la collection</a>
                 </div>
                 <div class="img-wrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/2.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/4.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll2/3.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/1.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/2.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/4.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll2/3.jpg" alt="">
                 </div>
             </section>
 
@@ -40,10 +40,10 @@ get_header();
                 </div>
 
                 <div class="img-wrapper">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/1.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/2.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/3.jpg" alt="">
+                    <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/coll3/4.jpg" alt="">
                 </div>
             </section>
         </div>
@@ -90,7 +90,7 @@ get_header();
     </main>
 
     <section class="contact-section">
-        <img width="673" height="297" src="<?php echo get_template_directory_uri(); ?>/images/contactSection.jpg"
+        <img loading="lazy" width="673" height="297" src="<?php echo get_template_directory_uri(); ?>/images/contactSection.jpg"
              alt="Info de contact">
         <div>
             <div>

@@ -22,22 +22,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
+    <p>ici boucle produits</p>
+
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
-		<thead>
-			<tr>
-				<th class="product-remove"><span class="screen-reader-text"><?php esc_html_e( 'Remove item', 'woocommerce' ); ?></span></th>
-                <th class="product-thumbnail"><span class="screen-reader-text"><?php esc_html_e( 'Thumbnail image', 'woocommerce' ); ?></span></th>
-                <th class="product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
-                <th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
-                <th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
-                <th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
-			</tr>
-		</thead>
 		<tbody>
-			<?php do_action( 'woocommerce_before_cart_contents' ); ?>
-
-// ici boucle produits
-
 			<?php do_action( 'woocommerce_cart_contents' ); ?>
 
 			<tr>
@@ -55,6 +43,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
 
+<!-- total panier-->
 <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
 
 <div class="cart-collaterals">
