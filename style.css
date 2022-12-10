@@ -137,6 +137,32 @@ p {
     align-items: center;
     gap: 2rem;
     padding: 2rem;
+    position: relative;
+}
+
+.secondary-header-nav {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.secondary-header-nav a {
+    font: var(--text-font);
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /*font-size: .8rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-header ul,
@@ -218,6 +244,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    width: 100%;
 
     display: flex;
     justify-content: center;
@@ -231,6 +258,7 @@ p {
     font-size: clamp(2rem, 10vw, 4rem);
     font-weight: lighter;
     margin: 0;
+    text-align: center;
 }
 
 .collections img {
