@@ -381,6 +381,7 @@ p {
 }
 
 .image-section {
+    display: block;
     aspect-ratio: 1 / 1.2;
     height: 70vh;
     background-color: #ccc;

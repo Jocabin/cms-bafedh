@@ -27,7 +27,8 @@ get_header();
         <form class="product-section"
               action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
               method="post" enctype='multipart/form-data'>
-            <div class="image-section"></div>
+
+            <img class="image-section" src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($product->ID))[0]; ?>" <?php the_title('alt="', '"'); ?> />
 
             <div class="product-details">
                 <header>
