@@ -28,13 +28,15 @@ get_header();
               action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
               method="post" enctype='multipart/form-data'>
 
-            <img class="image-section" src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($product->ID))[0]; ?>" <?php the_title('alt="', '"'); ?> />
+            <img class="image-section"
+                 src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($product->ID))[0]; ?>" <?php the_title('alt="', '"'); ?> />
 
             <div class="product-details">
                 <header>
                     <h2 class="tags"><?php echo $product->get_tags(); ?></h2>
                     <?php the_title('<h1 class="product_title entry-title">', '</h1>'); ?>
-                    <p><?php echo $product->get_price_html(); ?><br>Taxes incluses</p>
+                    <p class="product-page-price"><?php echo $product->get_price_html(); ?></p>
+                    <p>Taxes incluses</p>
                     <p>Plus que <?php echo $product->get_stock_quantity(); ?> en stock</p>
                 </header>
 
