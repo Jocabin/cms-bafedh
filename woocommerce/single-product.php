@@ -28,7 +28,7 @@ get_header();
               action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
               method="post" enctype='multipart/form-data'>
 
-            <img class="image-section"
+            <img class="product-image"
                  src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($product->ID))[0]; ?>" <?php the_title('alt="', '"'); ?> />
 
             <div class="product-details">
@@ -66,6 +66,31 @@ get_header();
             </div>
         </form>
         <?php do_action('woocommerce_after_add_to_cart_form'); ?>
+
+        <?php
+        if (wc_products_array_orderby(array_filter(array_map('wc_get_product', $product->get_upsell_ids()), 'wc_products_array_filter_visible'), $orderby, $order)) : ?>
+            <section class="crosssells">
+                <h2>Nos recommandations de cadres et d’attaches</h2>
+
+                <?php woocommerce_product_loop_start(); ?>
+                <?php foreach (wc_products_array_orderby(array_filter(array_map('wc_get_product', $product->get_upsell_ids()), 'wc_products_array_filter_visible'), $orderby, $order) as $upsell) : ?>
+
+                    <li class="crossell-product">
+                        <a href="<?php echo get_permalink($upsell->id) ?>">
+                            <img src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($upsell->id))[0]; ?>"
+                                 alt="<?php echo $upsell->name ?>">
+                            <h2><?php echo $upsell->name ?></h2>
+                            <p>À partir de <?php echo $upsell->price ?>€</p>
+                        </a>
+                    </li>
+
+                <?php endforeach; ?>
+                <?php woocommerce_product_loop_end(); ?>
+            </section>
+        <?php endif;
+
+        wp_reset_postdata();
+        ?>
 
         <ul class="reassurance">
             <li>
