@@ -23,7 +23,16 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
 <?php if ('yes' === get_option('woocommerce_enable_myaccount_registration')) : ?>
 
-<div class="u-columns col2-set" id="customer_login">
+    <script defer>
+        function registerOrLogin() {
+            document.getElementById('customer_login').classList.toggle('hidden')
+            document.getElementById('customer_register').classList.toggle('hidden')
+        }
+    </script>
+
+    <button onclick="registerOrLogin()">click</button>
+
+<div id="customer_login">
     <!--login-->
     <div>
         <?php endif; ?>
@@ -75,9 +84,10 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
         <?php if ('yes' === get_option('woocommerce_enable_myaccount_registration')) : ?>
     </div>
+</div>
 
-    <!--    register-->
-    <div>
+<!--    register-->
+    <div id="customer_register" class="hidden">
         <h2><?php esc_html_e('Register', 'woocommerce'); ?></h2>
 
         <form method="post"
@@ -135,7 +145,6 @@ do_action('woocommerce_before_customer_login_form'); ?>
 
     </div>
 
-</div>
 <?php endif; ?>
 
 <?php do_action('woocommerce_after_customer_login_form'); ?>
