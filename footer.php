@@ -23,6 +23,7 @@
                             stroke-miterlimit: 10;
                             stroke-width: 6px;
                         }
+
                         .footersvg * {
                             fill: var(--white)
                         }</style>
@@ -79,6 +80,19 @@
 </footer>
 
 <?php wp_footer(); ?>
+
+<script>
+    window.axeptioSettings = {
+        clientId: "63bd29daffcdaf826382ddc9",
+        cookiesVersion: "bastien de bafedh-fr",
+    };
+    (function (d, s) {
+        var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+        e.async = true;
+        e.src = "//static.axept.io/sdk.js";
+        t.parentNode.insertBefore(e, t);
+    })(document, "script");
+</script>
 
 </body>
 </html>
