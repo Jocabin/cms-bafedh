@@ -707,7 +707,7 @@ li.product-tile:hover div img {
 }
 
 /* FORM LOGIN */
-.form-login {
+.form-login, .form-register {
     display: flex;
     flex-direction: column;
     align-items: center;
