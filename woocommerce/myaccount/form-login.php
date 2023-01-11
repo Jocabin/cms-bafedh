@@ -20,19 +20,66 @@ if (!defined('ABSPATH')) {
 }
 
 do_action('woocommerce_before_customer_login_form'); ?>
-<script defer>
-    function registerOrLogin() {
-        document.getElementById('customer_login').classList.toggle('hidden')
-        document.getElementById('customer_register').classList.toggle('hidden')
-    }
-</script>
 
-<button onclick="registerOrLogin()">click</button>
+<!--    register-->
+<div id="customer_register">
+    <h2>Créer un compte</h2>
+
+    <form method="post"
+          class="form-register" <?php do_action('woocommerce_register_form_tag'); ?> >
+
+        <?php do_action('woocommerce_register_form_start'); ?>
+
+        <div class="textfields">
+            <p class="textfield">
+                <label for="reg_username">Prénom</label>
+                <input type="text" name="username"
+                       id="reg_username" autocomplete="name"
+                       value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
+            </p>
+
+            <p class="textfield">
+                <label for="reg_email">Votre e-mail</label>
+                <input type="email" name="email"
+                       id="reg_email" autocomplete="email"
+                       value="<?php echo (!empty($_POST['email'])) ? esc_attr(wp_unslash($_POST['email'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
+            </p>
+
+            <p class="textfield">
+                <label for="reg_password">Votre mot de passe</label>
+                <input type="password" name="password"
+                       id="reg_password" autocomplete="new-password"/>
+            </p>
+        </div>
+
+        <?php do_action('woocommerce_register_form'); ?>
+
+        <div class="actions-login-button">
+            <?php wp_nonce_field('woocommerce-register', 'woocommerce-register-nonce'); ?>
+
+            <button type="submit" class="primary-button" name="register"
+                    value="<?php esc_attr_e('Register', 'woocommerce'); ?>">
+                Créer mon compte
+            </button>
+
+            <div class="horizontal-side-line-text">
+                <span></span>
+                <p>ou</p>
+                <span></span>
+            </div>
+
+            <a href="#" class="primary-button dark-button">Se connecter</a>
+        </div>
+
+        <?php do_action('woocommerce_register_form_end'); ?>
+
+    </form>
+</div>
 
 <div id="customer_login">
     <!--login-->
     <div>
-        <h2><?php esc_html_e('Login', 'woocommerce'); ?></h2>
+        <h2>Connexion</h2>
 
         <form class="form-login" method="post">
             <?php do_action('woocommerce_login_form_start'); ?>
@@ -66,62 +113,25 @@ do_action('woocommerce_before_customer_login_form'); ?>
                 </p>
             </div>
 
-            <button type="submit" class="primary-button" name="login"
-                    value="<?php esc_attr_e('Log in', 'woocommerce'); ?>">
-                Se connecter
-            </button>
+            <div class="actions-login-button">
+                <button type="submit" class="primary-button" name="login"
+                        value="<?php esc_attr_e('Log in', 'woocommerce'); ?>">
+                    Se connecter
+                </button>
 
+                <div class="horizontal-side-line-text">
+                    <span></span>
+                    <p>ou</p>
+                    <span></span>
+                </div>
+
+                <a href="#customer_register" class="primary-button dark-button">Créer mon compte</a>
+            </div>
 
             <?php do_action('woocommerce_login_form_end'); ?>
 
         </form>
     </div>
-</div>
-
-<!--    register-->
-<div id="customer_register" class="hidden">
-    <h2>Créer un compte</h2>
-
-    <form method="post"
-          class="form-register" <?php do_action('woocommerce_register_form_tag'); ?> >
-
-        <?php do_action('woocommerce_register_form_start'); ?>
-
-        <div class="textfields">
-            <p class="textfield">
-                <label for="reg_username">Prénom</label>
-                <input type="text" name="username"
-                       id="reg_username" autocomplete="name"
-                       value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
-            </p>
-
-            <p class="textfield">
-                <label for="reg_email">Votre e-mail</label>
-                <input type="email" name="email"
-                       id="reg_email" autocomplete="email"
-                       value="<?php echo (!empty($_POST['email'])) ? esc_attr(wp_unslash($_POST['email'])) : ''; ?>"/><?php // @codingStandardsIgnoreLine ?>
-            </p>
-
-            <p class="textfield">
-                <label for="reg_password">Votre mot de passe</label>
-                <input type="password" name="password"
-                       id="reg_password" autocomplete="new-password"/>
-            </p>
-        </div>
-
-        <?php do_action('woocommerce_register_form'); ?>
-
-        <p class="woocommerce-form-row form-row">
-            <?php wp_nonce_field('woocommerce-register', 'woocommerce-register-nonce'); ?>
-            <button type="submit"
-                    class="primary-button"
-                    name="register"
-                    value="<?php esc_attr_e('Register', 'woocommerce'); ?>"><?php esc_html_e('Register', 'woocommerce'); ?></button>
-        </p>
-
-        <?php do_action('woocommerce_register_form_end'); ?>
-
-    </form>
 </div>
 
 <?php do_action('woocommerce_after_customer_login_form'); ?>

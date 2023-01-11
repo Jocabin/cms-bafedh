@@ -764,3 +764,46 @@ li.product-tile:hover div img {
     color: var(--black);
     border-bottom: 2px solid var(--black);
 }
+
+.horizontal-side-line-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.horizontal-side-line-text span {
+    width: 100%;
+    border-bottom: 2px solid var(--gray);
+}
+
+.horizontal-side-line-text p {
+    font-weight: bold;
+}
+
+.actions-login-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+#customer_register {
+    display: none;
+}
+
+#customer_register:target {
+    display: block;
+}
+
+#customer_register:target + #customer_login {
+    display: none;
+}
+
+#customer_register h2, #customer_login h2 {
+    text-align: center;
+}
