@@ -654,6 +654,7 @@ li.product-tile:hover div img {
     gap: 3rem;
     width: 90%;
     margin: auto;
+    padding-block: 3rem;
 }
 
 .cart-collaterals {
