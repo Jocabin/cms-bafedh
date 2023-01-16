@@ -105,7 +105,7 @@ get_header();
             <div>
                 <a href="mailto:bastiendb@gmail.com" class="primary-button dark-button">Me contacter</a>
 
-                <p>Réponse entre 48 h 72h</p>
+                <p>Réponse entre 48h/72h</p>
             </div>
         </div>
     </section>
