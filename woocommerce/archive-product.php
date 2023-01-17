@@ -26,7 +26,7 @@ if (woocommerce_product_loop()) {
             do_action('woocommerce_shop_loop');
             ?>
             <li class="product-tile" tabindex="0">
-                <a href="<?php echo esc_url($link) ?>">
+                <a href="<?php echo get_the_permalink($product->id) ?>">
                     <div>
                         <?php do_action('woocommerce_before_shop_loop_item_title'); ?>
                     </div>
