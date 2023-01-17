@@ -569,6 +569,38 @@ li.product-tile:hover div img {
     font-weight: bold;
 }
 
+.product-options {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-option {
+    display: inline-flex;
+    border: solid 2px var(--gray);
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px 1.5rem;
+    font-weight: 600;
+}
+
+.product-option > input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.product-option:has(input:checked) {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
 /* CART PAGE */
 
 .cart-form {

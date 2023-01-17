@@ -42,6 +42,16 @@ get_header();
 
                 <div class="choose-size">
                     <h3>Choisissez votre taille</h3>
+
+                    <div class="product-options">
+                        <?php foreach ($product->attributes['taille']['options'] as $product_attribute_key => $product_attribute) : ?>
+                                <label class="product-option" for="<?php echo $product_attribute ?>-id">
+                                    <?php echo $product_attribute ?>
+                                    <input type="radio" name="product_attribute_taille"
+                                           id="<?php echo $product_attribute ?>-id">
+                                </label>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
 
                 <div class="choose-paper">
