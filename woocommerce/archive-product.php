@@ -12,10 +12,9 @@ $link = apply_filters('woocommerce_loop_product_link', get_the_permalink(), $pro
 <?php do_action('woocommerce_before_main_content'); ?>
 
     <nav class="products-page-tab-manager">
-        <a class="products-page-tab" href="/boutique-type/photos">Photos</a>
-        <a class="products-page-tab" href="/boutique-type/accessoires">Accessoires</a>
+        <a id="photos-tab" class="products-page-tab" href="/boutique-type/photos">Photos</a>
+        <a id="accessoires-tab" class="products-page-tab" href="/boutique-type/accessoires">Accessoires</a>
     </nav>
-
 <?php
 if (woocommerce_product_loop()) {
     woocommerce_product_loop_start();
@@ -108,5 +107,14 @@ if (woocommerce_product_loop()) {
             </div>
         </div>
     </section>
+    <script defer>
+        if (window.location.href.endsWith('/boutique-type/accessoires/')) {
+            document.getElementById('accessoires-tab').classList.add('selected-tab')
+            // document.getElementById('photos-tab').classList.remove('selected-tab')
+        } else if (window.location.href.endsWith('/boutique-type/photos/')) {
+            document.getElementById('photos-tab').classList.add('selected-tab')
+            // document.getElementById('accessoires-tab').remove.add('selected-tab')
+        }
+    </script>
 <?php
 get_footer();

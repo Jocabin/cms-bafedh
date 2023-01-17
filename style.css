@@ -511,6 +511,16 @@ p {
 
 .products-page-tab {
     padding: 1rem;
+    border: solid 2px var(--gray);
+    color: var(--black);
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.products-page-tab.selected-tab {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    color: #fff;
 }
 
 nav + ul.products {
