@@ -56,6 +56,16 @@ get_header();
 
                 <div class="choose-paper">
                     <h3>Choisissez votre finition d'impression</h3>
+
+                    <div class="product-options">
+                        <?php foreach ($product->attributes['finition']['options'] as $product_attribute_key => $product_attribute) : ?>
+                            <label class="product-option" for="<?php echo $product_attribute ?>-id">
+                                <?php echo $product_attribute ?>
+                                <input type="radio" name="product_attribute_finition"
+                                       id="<?php echo $product_attribute ?>-id">
+                            </label>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
 
                 <?php echo apply_filters('woocommerce_short_description', $post->post_content); ?>
