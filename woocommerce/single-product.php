@@ -40,33 +40,38 @@ get_header();
                     <p>Plus que <?php echo $product->get_stock_quantity(); ?> en stock</p>
                 </header>
 
-                <div class="choose-size">
-                    <h3>Choisissez votre taille</h3>
+                <?php if ($product->attributes['taille']['options']): ?>
 
-                    <div class="product-options">
-                        <?php foreach ($product->attributes['taille']['options'] as $product_attribute_key => $product_attribute) : ?>
+                    <div class="choose-size">
+                        <h3>Choisissez votre taille</h3>
+
+                        <div class="product-options">
+                            <?php foreach ($product->attributes['taille']['options'] as $product_attribute_key => $product_attribute) : ?>
                                 <label class="product-option" for="<?php echo $product_attribute ?>-id">
                                     <?php echo $product_attribute ?>
                                     <input type="radio" name="product_attribute_taille"
                                            id="<?php echo $product_attribute ?>-id">
                                 </label>
-                        <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
 
-                <div class="choose-paper">
-                    <h3>Choisissez votre finition d'impression</h3>
+                <?php if ($product->attributes['finition']['options']): ?>
+                    <div class="choose-paper">
+                        <h3>Choisissez votre finition d'impression</h3>
 
-                    <div class="product-options">
-                        <?php foreach ($product->attributes['finition']['options'] as $product_attribute_key => $product_attribute) : ?>
-                            <label class="product-option" for="<?php echo $product_attribute ?>-id">
-                                <?php echo $product_attribute ?>
-                                <input type="radio" name="product_attribute_finition"
-                                       id="<?php echo $product_attribute ?>-id">
-                            </label>
-                        <?php endforeach; ?>
+                        <div class="product-options">
+                            <?php foreach ($product->attributes['finition']['options'] as $product_attribute_key => $product_attribute) : ?>
+                                <label class="product-option" for="<?php echo $product_attribute ?>-id">
+                                    <?php echo $product_attribute ?>
+                                    <input type="radio" name="product_attribute_finition"
+                                           id="<?php echo $product_attribute ?>-id">
+                                </label>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
 
                 <?php echo apply_filters('woocommerce_short_description', $post->post_content); ?>
 
