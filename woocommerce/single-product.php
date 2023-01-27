@@ -28,6 +28,28 @@ get_header();
               action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
               method="post" enctype='multipart/form-data'>
 
+            <?php
+            function getVariationsYaakov($var, $p): array
+            {
+                $variations_ids = $p->get_children();
+                $childrens = $p->get_children();
+                $variations = [];
+
+                foreach ($childrens as $index => $child) {
+                    $data = $p->get_child($child)->get_data();
+                    $attr = $data['attributes'][$var];
+                    $variations[$variations_ids[$index]] = $attr;
+                }
+
+                return $variations;
+            }
+
+            ?>
+
+            <input type="hidden" name="quantity" value="1">
+            <input type="hidden" name="product_id" value="<?php echo esc_attr($product->get_id()); ?>">
+            <input type="hidden" id="variation_input" name="variation_id" value="">
+
             <img class="product-image"
                  src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($product->ID))[0]; ?>" <?php the_title('alt="', '"'); ?> />
 
@@ -41,16 +63,17 @@ get_header();
                 </header>
 
                 <?php if ($product->attributes['taille']['options']): ?>
-
                     <div class="choose-size">
                         <h3>Choisissez votre taille</h3>
 
                         <div class="product-options">
-                            <?php foreach ($product->attributes['taille']['options'] as $product_attribute_key => $product_attribute) : ?>
+                            <?php foreach (getVariationsYaakov('taille', $product) as $product_attribute_key => $product_attribute) : ?>
                                 <label class="product-option" for="<?php echo $product_attribute ?>-id">
                                     <?php echo $product_attribute ?>
-                                    <input type="radio" name="product_attribute_taille"
-                                           id="<?php echo $product_attribute ?>-id">
+                                    <input type="radio" name="attribute_taille"
+                                           id="<?php echo $product_attribute ?>-id"
+                                           value="<?php echo $product_attribute ?>"
+                                           onclick="document.getElementById('variation_input').value = '<?php echo $product_attribute_key ?>'">
                                 </label>
                             <?php endforeach; ?>
                         </div>
@@ -62,7 +85,7 @@ get_header();
                         <h3>Choisissez votre finition d'impression</h3>
 
                         <div class="product-options">
-                            <?php foreach ($product->attributes['finition']['options'] as $product_attribute_key => $product_attribute) : ?>
+                            <?php foreach (getVariationsYaakov('finition', $product) as $product_attribute_key => $product_attribute) : ?>
                                 <label class="product-option" for="<?php echo $product_attribute ?>-id">
                                     <?php echo $product_attribute ?>
                                     <input type="radio" name="product_attribute_finition"
@@ -76,9 +99,10 @@ get_header();
                 <?php echo apply_filters('woocommerce_short_description', $post->post_content); ?>
 
                 <div class="cta">
+
                     <?php do_action('woocommerce_before_add_to_cart_button'); ?>
 
-                    <button onclick="alert('produit ajouté')" type="submit" name="add-to-cart"
+                    <button type="submit" name="add-to-cart"
                             value="<?php echo esc_attr($product->get_id()); ?>"
                             class="primary-button"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
 

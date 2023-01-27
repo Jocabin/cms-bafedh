@@ -108,13 +108,10 @@ if (woocommerce_product_loop()) {
         </div>
     </section>
     <script defer>
-        console.log(window.location.href)
         if (window.location.href.endsWith('accessoires/')) {
             document.getElementById('accessoires-tab').classList.add('selected-tab')
-            // document.getElementById('photos-tab').classList.remove('selected-tab')
         } else if (window.location.href.endsWith('photos/')) {
             document.getElementById('photos-tab').classList.add('selected-tab')
-            // document.getElementById('accessoires-tab').remove.add('selected-tab')
         }
     </script>
 <?php

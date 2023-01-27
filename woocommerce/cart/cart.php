@@ -24,6 +24,7 @@ do_action('woocommerce_before_cart'); ?>
 
     <?php
     foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+
         $_product = apply_filters('woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key);
         $product_id = apply_filters('woocommerce_cart_item_product_id', $cart_item['product_id'], $cart_item, $cart_item_key);
 
@@ -64,8 +65,8 @@ do_action('woocommerce_before_cart'); ?>
                         }
                         ?>
                         <!--taille produit-->
-                        <p>Taille : </p>
-                        <p>Finition : </p>
+                        <p>Taille : <?php echo $_product->attributes['taille']; ?></p>
+                        <p>Finition : <?php echo $_product->attributes['finition']; ?></p>
                         <!--finition-->
                     </div>
                 </div>
@@ -102,22 +103,6 @@ do_action('woocommerce_before_cart'); ?>
     }
     ?>
 
-    <!--<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
-        <tbody>
-            <?php /*do_action( 'woocommerce_cart_contents' ); */ ?>
-
-            <tr>
-                <td colspan="6" class="actions">
-
-                    <?php /*do_action( 'woocommerce_cart_actions' ); */ ?>
-
-                    <?php /*wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); */ ?>
-                </td>
-            </tr>
-
-            <?php /*do_action( 'woocommerce_after_cart_contents' ); */ ?>
-        </tbody>
-    </table>-->
     <?php do_action('woocommerce_after_cart_table'); ?>
 </form>
 
