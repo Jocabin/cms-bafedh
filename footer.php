@@ -10,9 +10,6 @@
  */
 
 ?>
-<div class="cursor-outer"></div>
-<div class="cursor-inner"></div>
-
 <footer id="colophon" class="site-footer">
     <div>
         <a class="logo-link" href="/">

@@ -110,7 +110,41 @@ get_header();
                 </div>
 
                 <footer>
-                    <!--                    Infos format etc (voir figma screen en bas) (details html tag)-->
+                    <details>
+                        <summary>Formats</summary>
+                        <p>
+                            Parce que je souhaite vous offrir des choix divers, et de qualité. Vous pouvez commander vos
+                            photos sur mon site sous 4 dimensions : 40 x 60, 40 x 90, 80 x 120, 100 x 140.
+                            Parfait pour de la décoration, avec les cadres disponibles sur mon site dans la section
+                            “accessoires”, vous pourrez décorer votre pièce à vivre, chambre.. De la meilleure des
+                            manières grâce à ces photos de grandes tailles.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Impression</summary>
+                        <p>
+                            Parce que je souhaite vous offrir des choix divers, et de qualité. Vous pouvez commander vos
+                            photos sur mon site sous 4 dimensions : 40 x 60, 40 x 90, 80 x 120, 100 x 140.
+                            Parfait pour de la décoration, avec les cadres disponibles sur mon site dans la section
+                            “accessoires”, vous pourrez décorer votre pièce à vivre, chambre.. De la meilleure des
+                            manières grâce à ces photos de grandes tailles.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Expédition & retours</summary>
+                        <p>
+                            Pour l’expédition en Europe, je passe par UPS pour vous envoyer dans les meilleurs délais
+                            vos photos (1 à 4 jours ouvrables en Europe). Vos photos arrivent emballées, sous blisters
+                            afin que le transport ne détériore pas votre commande. Pour la politique retour, si votre
+                            commande présente un défaut de fabrication que ce soit lors de la production, ou pendant
+                            l'expédition si celle-ci est importante, vous avez jusqu’à 30 jours pour nous contacter !
+                            Afin que nous puissions voir avec vous les conditions de renvoi et de remboursement de votre
+                            commande. (Attention, chaque commande est faite avec soins et prise en photo pour certifier
+                            la qualité du produit dès l'envoi afin d’éviter toute fraude dès la réception !)
+                        </p>
+                    </details>
                 </footer>
             </div>
         </form>
