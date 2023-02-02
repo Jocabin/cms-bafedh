@@ -10,6 +10,8 @@
  */
 
 ?>
+<div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
 
 <footer id="colophon" class="site-footer">
     <div>
@@ -93,6 +95,19 @@
         t.parentNode.insertBefore(e, t);
     })(document, "script");
 </script>-->
+
+<script defer>
+    const cursor = document.querySelector(".cursor-inner");
+    const cursor2 = document.querySelector(".cursor-outer");
+
+    document.addEventListener("mousemove", e => {
+        cursor.style.top = e.y + "px";
+        cursor.style.left = e.x + "px";
+
+        cursor2.style.top = e.y + "px";
+        cursor2.style.left = e.x + "px";
+    })
+</script>
 
 </body>
 </html>

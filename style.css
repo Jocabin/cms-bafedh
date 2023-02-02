@@ -37,6 +37,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    cursor: none !important;
 }
 
 html,
@@ -54,6 +55,40 @@ body {
 
 .hidden {
     display: none;
+}
+
+[class^="cursor"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cursor-outer {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--accent);
+    transition: all .08s ease-out;
+}
+
+.cursor-inner {
+    width: 7px;
+    height: 7px;
+    background: var(--accent);
+}
+
+.content:hover ~ .cursor-outer {
+    width: 90px;
+    height: 90px;
+    background: var(--accent);
+    mix-blend-mode: difference;
+}
+
+.content:hover ~ .cursor-inner {
+    opacity: 0;
 }
 
 hr {
