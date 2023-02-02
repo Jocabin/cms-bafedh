@@ -50,7 +50,7 @@ defined('ABSPATH') || exit;
 
                 <p>J'ai bien reçu votre commande n°<?php echo $order->get_order_number(); ?>&nbsp;!</p>
                 <p>Mode de paiement : <?php echo $order->payment_method_title ?></p>
-                <p>Adresse de livraison : <?php echo $order->shipping_address_1; ?></p>
+                <p>Adresse de livraison : <?php echo $order->billing_address_1; ?></p>
             </div>
 
             <a href="/" title="Retourner à l'accueil" class="primary-button dark-button">Retourner à l'accueil</a>

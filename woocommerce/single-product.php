@@ -29,7 +29,7 @@ get_header();
               method="post" enctype='multipart/form-data'>
 
             <?php
-            function getVariationsYaakov($var, $p): array
+            function getVariationsYaakov($var, $p)
             {
                 $variations_ids = $p->get_children();
                 $childrens = $p->get_children();
