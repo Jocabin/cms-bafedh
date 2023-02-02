@@ -9,7 +9,8 @@ get_header();
             <section>
                 <div>
                     <h2>Merveilles de Séville</h2>
-                    <a href="/merveilles-de-seville-collections" class="primary-button light-button">Voir la collection</a>
+                    <a href="/merveilles-de-seville-collections" class="primary-button light-button">Voir la
+                        collection</a>
                 </div>
 
                 <div class="img-wrapper">
@@ -90,15 +91,15 @@ get_header();
     </main>
 
     <section class="contact-section">
-        <img loading="lazy" width="673" height="297" src="<?php echo get_template_directory_uri(); ?>/images/contactSection.jpg"
+        <img loading="lazy" width="673" height="297"
+             src="<?php echo get_template_directory_uri(); ?>/images/contactSection.jpg"
              alt="Info de contact">
         <div>
             <div>
                 <h2>Me contacter</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque dolore dolorem eos est eveniet
-                    inventore pariatur, porro quas quidem recusandae reiciendis rem repellendus tempore vero vitae
-                    voluptatum. Accusamus, nostrum!
+                    Vous avez une question sur les envois ou les tirages ou encore une interrogation sur mon parcours,
+                    n'hésitez pas à me contacter par mail ! Je vous répondrai dans les plus brefs délais
                 </p>
             </div>
 

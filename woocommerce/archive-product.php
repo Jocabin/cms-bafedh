@@ -94,9 +94,8 @@ if (woocommerce_product_loop()) {
             <div>
                 <h2>Me contacter</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque dolore dolorem eos est eveniet
-                    inventore pariatur, porro quas quidem recusandae reiciendis rem repellendus tempore vero vitae
-                    voluptatum. Accusamus, nostrum!
+                    Vous avez une question sur les envois ou les tirages ou encore une interrogation sur mon parcours,
+                    n'hésitez pas à me contacter par mail ! Je vous répondrai dans les plus brefs délais
                 </p>
             </div>
 
