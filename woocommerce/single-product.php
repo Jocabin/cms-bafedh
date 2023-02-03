@@ -124,11 +124,11 @@ get_header();
                     <details>
                         <summary>Impression</summary>
                         <p>
-                            Parce que je souhaite vous offrir des choix divers, et de qualité. Vous pouvez commander vos
-                            photos sur mon site sous 4 dimensions : 40 x 60, 40 x 90, 80 x 120, 100 x 140.
-                            Parfait pour de la décoration, avec les cadres disponibles sur mon site dans la section
-                            “accessoires”, vous pourrez décorer votre pièce à vivre, chambre.. De la meilleure des
-                            manières grâce à ces photos de grandes tailles.
+                            Pour l’impression de vos photos, vous aurez le choix entre différents types de papiers. Cela
+                            est permis d’ailleurs grâce à notre imprimeur partenaire : Artlabs (Une imprimerie
+                            bordelaise) qui accepte de me suivre dans ce projet !
+                            Nous vous offrons la possibilité d’obtenir des tirages de qualité et sous différentes formes
+                            de papiers.
                         </p>
                     </details>
 
