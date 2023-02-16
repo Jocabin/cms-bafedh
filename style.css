@@ -440,12 +440,17 @@ p {
 
 .product-image {
     display: block;
-    aspect-ratio: 1 / 1.2;
     width: fit-content;
-    max-width: 40%;
+    max-width: 30%;
     height: fit-content;
     min-width: min(513px, 100%);
     background-color: #ccc;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-details {

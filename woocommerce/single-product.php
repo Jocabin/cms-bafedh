@@ -51,7 +51,8 @@ get_header();
             <input type="hidden" id="variation_input" name="variation_id" value="">
 
             <img class="product-image"
-                 src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($product->ID))[0]; ?>" <?php the_title('alt="', '"'); ?> />
+                 src="<?php echo wp_get_attachment_image_url($product->get_image_id(), apply_filters( 'woocommerce_gallery_full_size', apply_filters( 'woocommerce_product_thumbnails_large_size', 'full' ) )); ?>" <?php the_title('alt="', '"'); ?> />
+
 
             <div class="product-details">
                 <header>
