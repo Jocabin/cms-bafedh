@@ -93,18 +93,5 @@
     })(document, "script");
 </script>-->
 
-<script defer>
-    const cursor = document.querySelector(".cursor-inner");
-    const cursor2 = document.querySelector(".cursor-outer");
-
-    document.addEventListener("mousemove", e => {
-        cursor.style.top = e.y + "px";
-        cursor.style.left = e.x + "px";
-
-        cursor2.style.top = e.y + "px";
-        cursor2.style.left = e.x + "px";
-    })
-</script>
-
 </body>
 </html>

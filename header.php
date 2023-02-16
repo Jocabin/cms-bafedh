@@ -24,9 +24,6 @@
 <?php wp_body_open(); ?>
 <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'cms-bafedh'); ?></a>
 
-<div class="cursor-outer"></div>
-<div class="cursor-inner"></div>
-
 <header id="masthead" class="site-header">
     <a class="logo-link" href="/">
         <svg id="Calque_2" width="200" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430.76 252.27">

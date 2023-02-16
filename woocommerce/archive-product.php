@@ -11,10 +11,12 @@ $link = apply_filters('woocommerce_loop_product_link', get_the_permalink(), $pro
 
 <?php do_action('woocommerce_before_main_content'); ?>
 
+<?php if (false): ?>
     <nav class="products-page-tab-manager">
         <a id="photos-tab" class="products-page-tab" href="/boutique-type/photos">Photos</a>
         <a id="accessoires-tab" class="products-page-tab" href="/boutique-type/accessoires">Accessoires</a>
     </nav>
+<?php endif ?>
 <?php
 if (woocommerce_product_loop()) {
     woocommerce_product_loop_start();
@@ -27,8 +29,9 @@ if (woocommerce_product_loop()) {
             <li class="product-tile" tabindex="0">
                 <a href="<?php echo get_the_permalink($product->id) ?>">
                     <div>
-                        <?php do_action('woocommerce_before_shop_loop_item_title'); ?>
+                        <?php echo woocommerce_get_product_thumbnail('woocommerce_single'); ?>
                     </div>
+
                     <?php do_action('woocommerce_shop_loop_item_title'); ?>
                     <p>À partir de <?php do_action('woocommerce_after_shop_loop_item_title'); ?></p>
                 </a>
