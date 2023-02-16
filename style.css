@@ -1072,3 +1072,11 @@ li.product-tile:hover div img {
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+/*PHOTO SUR MESURE*/
+div.frm_fields_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
