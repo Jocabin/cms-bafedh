@@ -74,17 +74,6 @@ p.no-comments {
     display: none;
 }
 
-/*a:hover ~ .cursor-outer {
-    width: 90px;
-    height: 90px;
-    background: var(--accent);
-    mix-blend-mode: difference;
-}
-
-a:hover ~ .cursor-inner {
-    opacity: 0;
-}*/
-
 hr {
     width: 100%;
 }
@@ -122,6 +111,19 @@ p {
 .logo-link svg {
     width: 100%;
     height: 100%;
+}
+
+.woocommerce-breadcrumb {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.woocommerce-breadcrumb a {
+    color: var(--accent);
 }
 
 .primary-button {
