@@ -22,37 +22,55 @@ if (!defined('ABSPATH')) {
 get_header();
 //wc_get_template_part('content', 'single-product');
 ?>
+
+<?php
+$imageSrc = wp_get_attachment_image_url($product->get_image_id(), apply_filters('woocommerce_gallery_full_size', apply_filters('woocommerce_product_thumbnails_large_size', 'full')));
+
+function getVariationsYaakov($var, $p)
+{
+    $variations_ids = $p->get_children();
+    $childrens = $p->get_children();
+    $variations = [];
+
+    foreach ($childrens as $index => $child) {
+        $data = $p->get_child($child)->get_data();
+        $attr = $data['attributes'][$var];
+        $variations[$variations_ids[$index]] = $attr;
+    }
+
+    return $variations;
+}
+
+?>
     <main class="single-product">
+        <input type="checkbox" id="zoomPhoto"/>
+        <label for="zoomPhoto" class="zoomView">
+            <img
+                    src="<?php echo $imageSrc; ?>" <?php the_title('alt="', '"'); ?> />
+        </label>
         <?php do_action('woocommerce_before_add_to_cart_form'); ?>
         <form class="product-section"
               action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>"
               method="post" enctype='multipart/form-data'>
 
-            <?php
-            function getVariationsYaakov($var, $p)
-            {
-                $variations_ids = $p->get_children();
-                $childrens = $p->get_children();
-                $variations = [];
-
-                foreach ($childrens as $index => $child) {
-                    $data = $p->get_child($child)->get_data();
-                    $attr = $data['attributes'][$var];
-                    $variations[$variations_ids[$index]] = $attr;
-                }
-
-                return $variations;
-            }
-
-            ?>
-
             <input type="hidden" name="quantity" value="1">
             <input type="hidden" name="product_id" value="<?php echo esc_attr($product->get_id()); ?>">
             <input type="hidden" id="variation_input" name="variation_id" value="">
 
-            <img class="product-image"
-                 src="<?php echo wp_get_attachment_image_url($product->get_image_id(), apply_filters( 'woocommerce_gallery_full_size', apply_filters( 'woocommerce_product_thumbnails_large_size', 'full' ) )); ?>" <?php the_title('alt="', '"'); ?> />
+            <label for="zoomPhoto">
+                <img class="product-image"
+                     src="<?php echo $imageSrc; ?>" <?php the_title('alt="', '"'); ?> />
+            </label>
 
+            <script defer>
+                document.querySelector('#zoomPhoto').addEventListener('click', (e) => {
+                    if (e.target.checked) {
+                        document.body.style.overflow = 'hidden'
+                    } else {
+                        document.body.style.overflow = 'auto'
+                    }
+                })
+            </script>
 
             <div class="product-details">
                 <header>

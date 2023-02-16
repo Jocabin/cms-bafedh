@@ -438,19 +438,43 @@ p {
     width: 100%;
 }
 
-.product-image {
+[for="zoomPhoto"]:not(.zoomView) {
     display: block;
     width: fit-content;
     max-width: 30%;
     height: fit-content;
     min-width: min(513px, 100%);
-    background-color: #ccc;
+    margin: 0;
 }
 
-.product-image img {
+.product-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+.product-image:hover, .zoomView:hover, .zoomView:hover img {
+    cursor: url('./zoom.svg') 14 14, auto !important;
+}
+
+#zoomPhoto {
+    display: none;
+}
+
+.zoomView {
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+
+.zoomView img {
+    max-height: calc(100vh - 4rem);
+}
+
+#zoomPhoto:checked + .zoomView {
+    display: grid;
+    place-items: center;
 }
 
 .product-details {
