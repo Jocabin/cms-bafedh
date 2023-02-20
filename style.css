@@ -518,7 +518,8 @@ p {
 .crosssells > ul.products {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    margin: 0 auto;
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
