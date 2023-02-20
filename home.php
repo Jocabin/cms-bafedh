@@ -99,7 +99,7 @@ get_header();
                 <h2>Me contacter</h2>
                 <p>
                     Vous avez une question sur les envois ou les tirages ou encore une interrogation sur mon parcours,
-                    n'hésitez pas à me contacter par mail ! Je vous répondrai dans les plus brefs délais
+                    n'hésitez pas à me contacter par mail ! Je vous répondrai dans les plus brefs délais.
                 </p>
             </div>
 
