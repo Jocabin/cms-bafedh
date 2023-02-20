@@ -511,11 +511,16 @@ p {
     overflow: hidden;
 }
 
+.crosssells > div {
+    width: 100%;
+    overflow: hidden;
+}
+
 .crosssells > h2 {
     text-align: center;
 }
 
-.crosssells > ul.products {
+.crosssells > div > ul.products {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

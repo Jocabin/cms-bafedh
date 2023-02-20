@@ -174,20 +174,22 @@ function getVariationsYaakov($var, $p)
             <section class="crosssells">
                 <h2>Nos recommandations de cadres et d’attaches</h2>
 
-                <?php woocommerce_product_loop_start(); ?>
-                <?php foreach (wc_products_array_orderby(array_filter(array_map('wc_get_product', $product->get_upsell_ids()), 'wc_products_array_filter_visible'), $orderby, $order) as $upsell) : ?>
+                <div>
+                    <?php woocommerce_product_loop_start(); ?>
+                    <?php foreach (wc_products_array_orderby(array_filter(array_map('wc_get_product', $product->get_upsell_ids()), 'wc_products_array_filter_visible'), $orderby, $order) as $upsell) : ?>
 
-                    <li class="crossell-product">
-                        <a href="<?php echo get_permalink($upsell->id) ?>">
-                            <img src="<?php echo wp_get_attachment_image_url($upsell->get_image_id(), apply_filters('woocommerce_gallery_full_size', apply_filters('woocommerce_product_thumbnails_large_size', 'full'))); ?>"
-                                 alt="<?php echo $upsell->name ?>">
-                            <h2><?php echo $upsell->name ?></h2>
-                            <p>À partir de <?php echo $upsell->price ?>€</p>
-                        </a>
-                    </li>
+                        <li class="crossell-product">
+                            <a href="<?php echo get_permalink($upsell->id) ?>">
+                                <img src="<?php echo wp_get_attachment_image_url($upsell->get_image_id(), apply_filters('woocommerce_gallery_full_size', apply_filters('woocommerce_product_thumbnails_large_size', 'full'))); ?>"
+                                     alt="<?php echo $upsell->name ?>">
+                                <h2><?php echo $upsell->name ?></h2>
+                                <p>À partir de <?php echo $upsell->price ?>€</p>
+                            </a>
+                        </li>
 
-                <?php endforeach; ?>
-                <?php woocommerce_product_loop_end(); ?>
+                    <?php endforeach; ?>
+                    <?php woocommerce_product_loop_end(); ?>
+                </div>
             </section>
         <?php endif;
 
