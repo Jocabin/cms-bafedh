@@ -27,7 +27,7 @@ if (woocommerce_product_loop()) {
             do_action('woocommerce_shop_loop');
             ?>
             <li class="product-tile" tabindex="0">
-                <a href="<?php echo get_the_permalink($product->id) ?>">
+                <a href="<?php echo get_the_permalink($product->get_id) ?>">
                     <div>
                         <?php echo woocommerce_get_product_thumbnail('woocommerce_single'); ?>
                     </div>
