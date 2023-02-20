@@ -179,7 +179,7 @@ function getVariationsYaakov($var, $p)
 
                     <li class="crossell-product">
                         <a href="<?php echo get_permalink($upsell->id) ?>">
-                            <img src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($upsell->id))[0]; ?>"
+                            <img src="<?php echo wp_get_attachment_image_url($upsell->get_image_id(), apply_filters('woocommerce_gallery_full_size', apply_filters('woocommerce_product_thumbnails_large_size', 'full'))); ?>"
                                  alt="<?php echo $upsell->name ?>">
                             <h2><?php echo $upsell->name ?></h2>
                             <p>À partir de <?php echo $upsell->price ?>€</p>
