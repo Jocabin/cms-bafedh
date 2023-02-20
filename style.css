@@ -520,7 +520,7 @@ p {
     text-align: center;
 }
 
-.crosssells > div > ul.products {
+.crosssells ul.products {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
