@@ -80,7 +80,7 @@
 
 <?php wp_footer(); ?>
 
-<!--<script>
+<script>
     window.axeptioSettings = {
         clientId: "63bd29daffcdaf826382ddc9",
         cookiesVersion: "bastien de bafedh-fr",
@@ -91,7 +91,7 @@
         e.src = "//static.axept.io/sdk.js";
         t.parentNode.insertBefore(e, t);
     })(document, "script");
-</script>-->
+</script>
 
 </body>
 </html>
