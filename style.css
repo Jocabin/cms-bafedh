@@ -555,17 +555,13 @@ p {
     margin: 0;
 }
 
-.product-details .tags {
-    color: var(--accent);
-}
-
 .product-details > header > h2 {
     text-align: left;
     font-size: 1rem;
 }
 
 .product-details > header > h2 > a, .product-details > header > h2 > a:visited {
-    color: var(--black);
+    color: var(--accent);
     text-decoration: none;
 }
 
