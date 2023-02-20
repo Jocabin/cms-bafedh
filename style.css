@@ -522,7 +522,7 @@ p {
     margin: 0 auto;
     align-items: flex-start;
     gap: 1rem;
-    width: 100%;
+    width: fit-content;
 }
 
 .crossell-product {
