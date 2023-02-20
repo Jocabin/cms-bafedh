@@ -500,7 +500,7 @@ p {
 }
 
 .crosssells {
-    max-width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -528,13 +528,6 @@ p {
     align-items: flex-start;
     gap: 1rem;
     width: fit-content;
-    overflow-x: auto;
-}
-
-@media screen and (min-width: 1150px) {
-    .crosssells > ul.products {
-        width: 100%;
-    }
 }
 
 .crossell-product {
