@@ -24,7 +24,7 @@ get_header();
 ?>
 
 <?php
-$imageSrc = wp_get_attachment_image_src(get_post_thumbnail_id($product->ID))[0];
+$imageSrc = wp_get_attachment_image_url($product->get_image_id(), apply_filters('woocommerce_gallery_full_size', apply_filters('woocommerce_product_thumbnails_large_size', 'full')));
 
 function getVariationsYaakov($var, $p)
 {
