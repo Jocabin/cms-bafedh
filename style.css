@@ -662,7 +662,7 @@ li.product-tile p {
 }
 
 li.product-tile:hover div img {
-    transform: rotate(-4deg) scale(1.1);
+    transform: scale(1.1);
 }
 
 .no-products {
