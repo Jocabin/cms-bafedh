@@ -642,6 +642,10 @@ li.product-tile a, li.product-tile a:visited {
 
 li.product-tile h2 {
     font-size: 1.25rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 li.product-tile div {
