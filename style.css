@@ -633,6 +633,8 @@ li.product-tile a, li.product-tile a:visited {
     margin: 0;
     padding: 0;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     cursor: pointer;
     text-decoration: none;
     color: var(--black);
