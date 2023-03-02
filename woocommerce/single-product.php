@@ -87,13 +87,16 @@ function getVariationsYaakov($var, $p)
 
                         <div class="product-options">
                             <?php foreach (getVariationsYaakov('taille', $product) as $product_attribute_key => $product_attribute) : ?>
+                            <div class="product-option-wrapper">
+                                <input type="radio" name="attribute_taille"
+                                       id="<?php echo $product_attribute ?>-id"
+                                       value="<?php echo $product_attribute ?>"
+                                       onclick="document.getElementById('variation_input').value = '<?php echo $product_attribute_key ?>'">
+
                                 <label class="product-option" for="<?php echo $product_attribute ?>-id">
                                     <?php echo $product_attribute ?>
-                                    <input type="radio" name="attribute_taille"
-                                           id="<?php echo $product_attribute ?>-id"
-                                           value="<?php echo $product_attribute ?>"
-                                           onclick="document.getElementById('variation_input').value = '<?php echo $product_attribute_key ?>'">
                                 </label>
+                            </div>
                             <?php endforeach; ?>
                         </div>
                     </div>

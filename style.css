@@ -705,7 +705,7 @@ li.product-tile:hover div img {
     font-weight: 600;
 }
 
-.product-option > input {
+.product-option-wrapper > input {
     appearance: none;
     -webkit-appearance: none;
     width: 0;
@@ -713,7 +713,7 @@ li.product-tile:hover div img {
     display: none;
 }
 
-.product-option:has(input:checked) {
+.product-option-wrapper > input:checked + .product-option {
     background-color: var(--accent);
     border-color: var(--accent);
     color: #fff;
